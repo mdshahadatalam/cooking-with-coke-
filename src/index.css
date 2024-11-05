@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@font-face {
+  font-family:"roboto-Regular";
+  src: url(/public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family:"roboto-bold";
+  src: url(/public/fonts/Roboto-Bold.ttf);
+}
+.back-img{
+  background-image: url(./assets/images/img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 991.98px) {
+  .RegisRes{
+    flex-direction: row;
+  }
+  .Registra {
+    width: 100%;
+  }
+ }
+
+
+ /* home section  */
+
+ .food{
+  letter-spacing: 3px;
+ }
+
+ /* @media (max-width: 991.98px) { 
+  .PostRes{
+    flex-direction: row;
+  }
+.postImg{
+  width: 50%;
+}
+
+ } */
+
+ /* last section  */
+ .emailIn{
+  width: 85%;
+  height: 40px;
+  outline: none;
+  border: 1px solid black;
+ }
+ .Subscribe{
+  width: 85%;
+  height: 40px;
+  background-color: black;
+  color: white;
+ }
