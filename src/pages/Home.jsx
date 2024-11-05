@@ -120,7 +120,7 @@ export const Home = () => {
           </div>
 
           <div className='text-center pt-8'>
-            <button className='w-[200px] h-[50px] bg-black text-white' >All Posts</button>
+            <button className='w-[250px] h-[55px] bg-black text-white AllPostBtn font-fontRegular text-xl ' >All posts</button>
           </div>
 
           

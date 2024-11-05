@@ -41,6 +41,11 @@
  .food{
   letter-spacing: 3px;
  }
+ .AllPostBtn:hover{
+  border: 5px solid black !important;
+  background-color: white !important;
+  color: black !important;
+}
 
  /* @media (max-width: 991.98px) { 
   .PostRes{
@@ -64,4 +69,10 @@
   height: 40px;
   background-color: black;
   color: white;
+ }
+
+ .Subscribe:hover{
+  border: 5px solid black !important;
+  background-color: white !important;
+  color: black !important;
  }
