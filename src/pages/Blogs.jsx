@@ -20,6 +20,7 @@ import blogs18  from '../assets/images/BlogImg/blog18.webp'
 import blogs19  from '../assets/images/BlogImg/blog19.webp'
 import MissOne from '../assets/images/BlogImg/blogsMissOne.webp'
 import MissTwo from '../assets/images/BlogImg/MissTwo.webp'
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,12 +30,17 @@ export const Blogs = () => {
     <>
     <section className='pt-14 pb-6'>
       <div className="container">
-        <h3 className='font-bold text-2xl font-fontRegular text-center pb-8'>ALL POSTS</h3>
+        
+        <h3 id='All' className='font-bold text-2xl font-fontRegular text-center pb-8 tracking-widest'>ALL POSTS</h3>
 
         <div className='pt-4'>
-          <a className='font-fontRegular text-xl py-2 px-3' href=""> All Posts</a>  <a className='font-fontRegular text-xl py-2 px-3' href="">Cheaper Than a Big Mac</a> <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a>
+
+          <a className='font-fontRegular text-xl py-2 px-3' href="#All"> All Posts</a>
+          <Link to={'/cheaper'}><a className='font-fontRegular text-xl py-2 px-3' href="">Cheaper Than a Big Mac</a></Link>
+          <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a>
           <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a>
         </div>
+
         <div className="row pt-4">
           <div className="col-lg-6">
 

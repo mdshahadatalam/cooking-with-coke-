@@ -10,6 +10,9 @@ import { SingIn } from './pages/SingIn';
 import { RootLayout } from './RootLayout';
 import { Blogs } from './pages/Blogs';
 import { About } from './pages/About';
+import { Cheaper } from './pages/Cheaper';
+import { Kid } from './pages/Kid';
+import Archive from './pages/Archive';
 
 
 
@@ -28,7 +31,9 @@ function App() {
          <Route path='/' element={< Home/>} />
          <Route path='/blogs' element={< Blogs/>} />
          <Route path='/about' element={< About/>} />
-         
+         <Route path='/cheaper' element={< Cheaper/>} />
+         <Route path='/kid' element={< Kid/>} />
+         <Route path='/archive' element={< Archive/>} />
          </Route>
 
          <Route path='/rejistration' element={<Rejistration/>} />
