@@ -33,19 +33,19 @@ export const Nav = () => {
       </NavLink>
 
         
-      <NavLink to={'/about'}  className={`${location.pathname == '/about' ? " border-1 border-dark border-bottom" : ""} edit`} >
-      <li className="nav-item">
-          <a className="nav-link text-xl font-fontRegular " href="#">About</a>
-        </li>
-      </NavLink>
-        
-
-
       <NavLink to={'/blogs'}  className={`${location.pathname == '/blogs' ? " border-1 border-dark border-bottom" : ""} edit`} >
       <li className="nav-item">
           <a className="nav-link text-xl font-fontRegular " href="#">Blog</a>
         </li>
       </NavLink> 
+
+
+
+      <NavLink to={'/about'}  className={`${location.pathname == '/about' ? " border-1 border-dark border-bottom" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link text-xl font-fontRegular " href="#">About</a>
+        </li>
+      </NavLink>
     </ul>
     {/* <a className="nav-link text-center  text-4xl font-fontRegular font-extrabold cooking " href="#">Cooking with Cole</a> */}
           
@@ -70,49 +70,28 @@ export const Nav = () => {
       
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
-<NavLink to={'/'}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
-<li className="nav-item">
-    <a className="nav-link" href="#">Home</a>
-  </li>
-</NavLink>
 
-  
-<NavLink to={'/shopGride'}  className={`${location.pathname == '/shopGride' ? "text-danger" : ""} edit`} >
+<NavLink to={'/'}  className={`${location.pathname == '/' ? " border-1 border-dark border-bottom" : ""} edit`} >
       <li className="nav-item">
-          <a className="nav-link" href="#">Shop</a>
+          <a className="nav-link text-xl font-fontRegular p-1  mt-2 " href="#">Home</a>
         </li>
       </NavLink>
 
-  <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Pages
-    </a>
-    <ul className="dropdown-menu">
-      <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
-     </ul>
-  </li>
-  
-  <NavLink to={'/feature'}  className={`${location.pathname == '/feature' ? "text-danger" : ""} edit`} >
+        
+      <NavLink to={'/blogs'}  className={`${location.pathname == '/blogs' ? " border-1 border-dark border-bottom" : ""} edit`} >
       <li className="nav-item">
-          <a className="nav-link" href="#">Feature</a>
+          <a className="nav-link text-xl font-fontRegular p-1 mt-2" href="#">Blog</a>
+        </li>
+      </NavLink> 
+
+
+
+      <NavLink to={'/about'}  className={`${location.pathname == '/about' ? " border-1 border-dark border-bottom" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link text-xl font-fontRegular p-1 mt-2" href="#">About</a>
         </li>
       </NavLink>
-
-
-  <NavLink to={'/blog'}  className={`${location.pathname == '/blog' ? "text-danger" : ""} edit`} >
-      <li className="nav-item">
-          <a className="nav-link" href="#">Blog</a>
-        </li>
-      </NavLink>
-
-
-
- <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? "text-danger" : ""} edit`}>
- <li className="nav-item">
-    <a className="nav-link" href="#">Contact</a>
-  </li>
- </NavLink>
-  
+ 
 </ul>
 
 <ul className='m-0 d-flex'>

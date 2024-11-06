@@ -4,8 +4,11 @@ import home2 from '../assets/images/HomeBlogImg/HomeB2.webp'
 import home3 from '../assets/images/HomeBlogImg/HomeB3.webp'
 import home4 from '../assets/images/HomeBlogImg/HomeB4.webp'
 import home5 from '../assets/images/HomeBlogImg/HomeB5.webp'
+import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
+
+  const navigate = useNavigate()
   return (
     <>
     <section className='py-10'>
@@ -120,7 +123,13 @@ export const Home = () => {
           </div>
 
           <div className='text-center pt-8'>
-            <button className='w-[250px] h-[55px] bg-black text-white AllPostBtn font-fontRegular text-xl ' >All posts</button>
+            <button onClick={ ()=>{
+              navigate('/blogs')
+            }} className='w-[250px] h-[55px] bg-black text-white AllPostBtn font-fontRegular text-xl ' >
+
+              All posts
+
+              </button>
           </div>
 
           

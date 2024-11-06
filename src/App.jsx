@@ -23,17 +23,16 @@ function App() {
     createRoutesFromElements(
       <Route>
 
-        <Route element={<RootLayout/>} > 
-
-        <Route path='/rejistration' element={<Rejistration/>} />
-        <Route path='/SignIn' element={<SingIn/>} />
-
+        <Route element={<RootLayout/>} >
 
          <Route path='/' element={< Home/>} />
          <Route path='/blogs' element={< Blogs/>} />
          <Route path='/about' element={< About/>} />
          
          </Route>
+
+         <Route path='/rejistration' element={<Rejistration/>} />
+        <Route path='/SignIn' element={<SingIn/>} />
         
       </Route>
     )
