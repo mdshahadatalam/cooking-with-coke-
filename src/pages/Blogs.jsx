@@ -30,15 +30,15 @@ export const Blogs = () => {
     <>
     <section className='pt-14 pb-6'>
       <div className="container">
-        
+
         <h3 id='All' className='font-bold text-2xl font-fontRegular text-center pb-8 tracking-widest'>ALL POSTS</h3>
 
         <div className='pt-4'>
 
           <a className='font-fontRegular text-xl py-2 px-3' href="#All"> All Posts</a>
           <Link to={'/cheaper'}><a className='font-fontRegular text-xl py-2 px-3' href="">Cheaper Than a Big Mac</a></Link>
-          <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a>
-          <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a>
+          <Link to={'/kid'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a></Link>
+          <Link to={'/archive'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a></Link>
         </div>
 
         <div className="row pt-4">

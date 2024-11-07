@@ -14,8 +14,8 @@ export const Kid = () => {
           <div className='pt-4'>
           <Link to={'/blogs'}> <a className='font-fontRegular text-xl py-2 px-3' href=""> All Posts</a></Link>
           <Link to={'/cheaper'}><a className='font-fontRegular text-xl py-2 px-3' href="">Cheaper Than a Big Mac</a></Link>
-          <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a>
-          <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a>
+          <Link to={'/kid'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Kids Can Cook</a></Link>
+          <Link to={'/archive'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a></Link>
           </div>
 
       <div className="row">
