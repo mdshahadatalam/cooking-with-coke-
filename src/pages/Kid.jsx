@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import cheaper1 from '../assets/images/cheaperIme/Cheaper1.webp'
 import cheaper2 from '../assets/images/cheaperIme/cheaper2.webp'
 import { Link } from 'react-router-dom'
 
+// aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export const Kid = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
   return (
     <>
      <section className='pt-10'>
@@ -18,7 +26,7 @@ export const Kid = () => {
           <Link to={'/archive'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a></Link>
           </div>
 
-      <div className="row">
+      <div data-aos="zoom-in"  data-aos-duration="3000"  className="row">
       <div className="row mt-4 border border-red-400 shadow-md m-0 p-0">
           <div className="col-lg-6 p-0 ">
           <img   src={cheaper1} className='img-fluid' alt="" />
@@ -42,7 +50,7 @@ export const Kid = () => {
       </div>
 
 
-      <div className="row mt-4 border border-red-400 shadow-md">
+      <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={cheaper2} className='img-fluid' alt="" />
 

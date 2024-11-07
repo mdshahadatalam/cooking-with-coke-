@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import archive1 from '../assets/images/ArchiveImg/Archive1.webp'
 import archive2 from '../assets/images/ArchiveImg/Archive2.webp'
 import archive3 from '../assets/images/ArchiveImg/Archive3.webp'
@@ -8,8 +8,16 @@ import archive6 from '../assets/images/ArchiveImg/Archive6.webp'
 import archive7 from '../assets/images/ArchiveImg/Archive7.webp'
 import { Link } from 'react-router-dom'
 
+// aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 export default function Archive() {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
   return (
    <>
 
@@ -25,7 +33,7 @@ export default function Archive() {
           <Link to={'/archive'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a></Link>
           </div>
 
-      <div className="row mt-4 border border-red-400 shadow-md m-0 p-0">
+      <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md m-0 p-0">
           <div className="col-lg-6 p-0 ">
           <img   src={archive1} className='img-fluid' alt="" />
 
@@ -48,7 +56,7 @@ export default function Archive() {
 
 
 
-      <div className="row mt-4 border border-red-400 shadow-md">
+      <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive2} className='img-fluid' alt="" />
 
@@ -69,7 +77,7 @@ export default function Archive() {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive3} className='img-fluid' alt="" />
 
@@ -90,7 +98,7 @@ export default function Archive() {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive4} className='img-fluid' alt="" />
 
@@ -112,7 +120,7 @@ export default function Archive() {
           </div>
 
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive5} className='img-fluid' alt="" />
 
@@ -133,7 +141,7 @@ export default function Archive() {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive6} className='img-fluid' alt="" />
 
@@ -154,7 +162,7 @@ export default function Archive() {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000"  className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={archive7} className='img-fluid' alt="" />
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import home1 from '../assets/images/HomeBlogImg/HomeB1.webp'
 import home2 from '../assets/images/HomeBlogImg/HomeB2.webp'
 import home3 from '../assets/images/HomeBlogImg/HomeB3.webp'
@@ -6,7 +6,16 @@ import home4 from '../assets/images/HomeBlogImg/HomeB4.webp'
 import home5 from '../assets/images/HomeBlogImg/HomeB5.webp'
 import { useNavigate } from 'react-router-dom'
 
+// aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export const Home = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
+
 
   const navigate = useNavigate()
   return (
@@ -16,7 +25,7 @@ export const Home = () => {
 
       <h3 className='text-center text-3xl font-bold food'>FOOD BLOG</h3>
 
-        <div className="row mt-4 border border-red-400 PostRes shadow-md">
+        <div  data-aos="zoom-in"  data-aos-duration="3000" className="row mt-4 border border-red-400 PostRes shadow-md">
           <div className="col-lg-6 p-0 postImg">
           <img   src={home1} className='img-fluid' alt="" />
 
@@ -36,7 +45,7 @@ export const Home = () => {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000" className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={home2} className='img-fluid' alt="" />
 
@@ -57,7 +66,7 @@ export const Home = () => {
           </div>
 
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000" className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={home3} className='img-fluid' alt="" />
 
@@ -79,7 +88,7 @@ export const Home = () => {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000" className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={home4} className='img-fluid' alt="" />
 
@@ -100,7 +109,7 @@ export const Home = () => {
               </div>
           </div>
 
-          <div className="row mt-4 border border-red-400 shadow-md">
+          <div data-aos="zoom-in"  data-aos-duration="3000" className="row mt-4 border border-red-400 shadow-md">
           <div className="col-lg-6 p-0">
           <img src={home5} className='img-fluid' alt="" />
 

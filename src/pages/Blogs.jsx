@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import blog1 from '../assets/images/BlogImg/blog1.webp'
 import blog2 from '../assets/images/BlogImg/blog2.webp'
 import blog3 from '../assets/images/BlogImg/blog3.webp'
@@ -22,10 +22,17 @@ import MissOne from '../assets/images/BlogImg/blogsMissOne.webp'
 import MissTwo from '../assets/images/BlogImg/MissTwo.webp'
 import { Link } from 'react-router-dom';
 
+// aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 
 export const Blogs = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
   return (
     <>
     <section className='pt-14 pb-6'>
@@ -41,10 +48,10 @@ export const Blogs = () => {
           <Link to={'/archive'}> <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a></Link>
         </div>
 
-        <div className="row pt-4">
+        <div  className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div  data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blog1} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -61,7 +68,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div  data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blog2} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -81,7 +88,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blog3} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -98,7 +105,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blog4} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -118,7 +125,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blog5} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -135,7 +142,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blog6} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -156,7 +163,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blog7} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -173,7 +180,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blog8} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -194,7 +201,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blog9} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -212,7 +219,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blog10} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -233,7 +240,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blogs11} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -251,7 +258,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blogs12} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -273,7 +280,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div  data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blogs13} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -291,7 +298,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blogs14} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -312,7 +319,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={MissOne} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -330,7 +337,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blogs15} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -351,7 +358,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blogs16} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -369,7 +376,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-out" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={MissTwo} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -390,7 +397,7 @@ export const Blogs = () => {
         <div className="row pt-4">
           <div className="col-lg-6">
 
-            <div className=' border border-red-400 PostRes shadow-md '>
+            <div data-aos-duration="3000" data-aos="zoom-out"  className=' border border-red-400 PostRes shadow-md '>
 
               <img className='img-fluid' src={blogs18} alt="image" />
               <div className='pt-4 ps-5 pb-24 pe-2'>
@@ -408,7 +415,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blogs17} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>
@@ -432,7 +439,7 @@ export const Blogs = () => {
           </div>
           <div className="col-lg-6">
 
-          <div className=' border border-red-400 PostRes shadow-md '>
+          <div data-aos-duration="3000" data-aos="zoom-in-up" className=' border border-red-400 PostRes shadow-md '>
 
           <img className='img-fluid' src={blogs19} alt="image" />
           <div className='pt-4 ps-5 pb-16 pe-2'>

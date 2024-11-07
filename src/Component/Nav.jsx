@@ -71,23 +71,23 @@ export const Nav = () => {
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
 
-<NavLink to={'/'}  className={`${location.pathname == '/' ? " border-1 border-dark border-bottom" : ""} edit`} >
-      <li className="nav-item">
+<NavLink to={'/'}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
+      <li data-bs-dismiss="offcanvas" className="nav-item">
           <a className="nav-link text-xl font-fontRegular p-1  mt-2 " href="#">Home</a>
         </li>
       </NavLink>
 
         
-      <NavLink to={'/blogs'}  className={`${location.pathname == '/blogs' ? " border-1 border-dark border-bottom" : ""} edit`} >
-      <li className="nav-item">
+      <NavLink to={'/blogs'}  className={`${location.pathname == '/blogs' ? "text-danger" : ""} edit`} >
+      <li data-bs-dismiss="offcanvas" className="nav-item">
           <a className="nav-link text-xl font-fontRegular p-1 mt-2" href="#">Blog</a>
         </li>
       </NavLink> 
 
 
 
-      <NavLink to={'/about'}  className={`${location.pathname == '/about' ? " border-1 border-dark border-bottom" : ""} edit`} >
-      <li className="nav-item">
+      <NavLink to={'/about'}  className={`${location.pathname == '/about' ? "text-danger" : ""} edit`} >
+      <li data-bs-dismiss="offcanvas" className="nav-item">
           <a className="nav-link text-xl font-fontRegular p-1 mt-2" href="#">About</a>
         </li>
       </NavLink>
