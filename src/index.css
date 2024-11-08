@@ -91,3 +91,25 @@
     width: 100%;
  }
 }
+
+
+/* porductd */
+@media (max-width:  768px) { 
+  .log{
+    padding: 0px !important;
+    font-size: 7px;
+    border: none !important;
+    line-height: 2 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .logRes{
+    display: none !important;
+  }
+
+  .navLog{
+    display: block !important;
+  }
+}
+

@@ -13,6 +13,7 @@ import { About } from './pages/About';
 import { Cheaper } from './pages/Cheaper';
 import { Kid } from './pages/Kid';
 import Archive from './pages/Archive';
+import { ProductD } from './pages/ProductD';
 
 
 
@@ -34,6 +35,7 @@ function App() {
          <Route path='/cheaper' element={< Cheaper/>} />
          <Route path='/kid' element={< Kid/>} />
          <Route path='/archive' element={< Archive/>} />
+         <Route path='/productD' element={< ProductD/>} />
          </Route>
 
          <Route path='/rejistration' element={<Rejistration/>} />
