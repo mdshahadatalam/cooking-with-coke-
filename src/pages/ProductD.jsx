@@ -6,10 +6,16 @@ import proImg3 from '../assets/images/productDimg/proImg3.webp'
 import proImg4 from '../assets/images/productDimg/proImg4.webp'
 import porImg5 from '../assets/images/productDimg/proImg5.webp'
 
+import card1 from '../assets/images/productDimg/card1.webp'
+import card2 from '../assets/images/productDimg/card2.webp'
+import card3 from '../assets/images/productDimg/card3.webp'
+
 import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgLink } from "react-icons/cg";
+
+import { IoEyeOutline } from "react-icons/io5";
 export const ProductD = () => {
   return (
     <>
@@ -117,6 +123,87 @@ export const ProductD = () => {
             </div>
         </div>
     </section>
+
+    <section className='py-9'>
+      <div className="container">
+
+        <div className='d-flex justify-between'>
+          <div> <span className='text-xl font-fontRegular'>Recent Posts</span></div>
+          <div> <span className='text-xl font-fontRegular'>See All</span></div>
+        </div>
+        <div className="row pt-5">
+
+          <div className="col-lg-4">
+
+            <div className=' border border-black-200 my-3'>
+              <div className='d-flex justify-center'>
+              <img className='img-fluid' src={card1} alt="" />
+              </div>
+
+              <div>
+                <h4 className='text-2xl font-fontRegular font-extrabold tracking-wide px-3 py-3 hover:text-red-400 text-center'>Steak Frites with Red Wine Pan Sauce</h4>
+
+                <hr />
+                
+
+                <div className='d-flex align-items-center px-3 py-3 justify-center'>
+                <span className='text-2xl ' > <IoEyeOutline /></span>
+                <span className='font-fontRegular px-1 text-center' >1,054</span>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+          <div className='border border-black-200 my-3'>
+              <div className='d-flex justify-center'>
+              <img className='img-fluid' src={card2} alt="" />
+              </div>
+
+              <div>
+                <h4 className='text-2xl font-fontRegular font-extrabold tracking-wide px-3 py-[30px] hover:text-red-400 text-center'>Spicy Chicken Tacos</h4>
+
+                <hr />
+                
+
+                <div className='d-flex align-items-center px-3 py-3 justify-center'>
+                <span className='text-2xl ' > <IoEyeOutline /></span>
+                <span className='font-fontRegular  px-1' >903</span>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+          <div className='border border-black-200 my-3'>
+              <div className='d-flex justify-center'>
+              <img className='img-fluid' src={card3} alt="" />
+              </div>
+
+              <div>
+                <h4 className='text-2xl font-fontRegular font-extrabold tracking-wide px-3 py-[30px] hover:text-red-400 text-center'>One-Pot Chicken and Rice</h4>
+
+                <hr />
+                
+
+                <div className='d-flex align-items-center px-3 py-3 justify-center'>
+                <span className='text-2xl ' > <IoEyeOutline /></span>
+                <span className='font-fontRegular px-1 ' >889</span>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
     </>
   )
 }
