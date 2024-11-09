@@ -4,7 +4,7 @@ import home2 from '../assets/images/HomeBlogImg/HomeB2.webp'
 import home3 from '../assets/images/HomeBlogImg/HomeB3.webp'
 import home4 from '../assets/images/HomeBlogImg/HomeB4.webp'
 import home5 from '../assets/images/HomeBlogImg/HomeB5.webp'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 // aos animation 
 import Aos from 'aos'
@@ -36,10 +36,13 @@ export const Home = () => {
                 <div className='pt-3 ps-2'>
                 <span className='text-lg font-fontRegular pt-3 d-block'>Jun 6 . 1 min read</span>
 
+                <Link to={'/productD'} > 
                 <div className='hover:text-red-500'>
                 <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Simple Arrabbiata Sauce</h4>
                 <p className='font-fontRegular text-xl pt-3'>Ingredients: 1 28.2 oz can whole peeled tomatoes 4 cloves <br/> garlic 1/4 cup olive oil Chopped Calabrian chiles Handful <br/>  chopped parsley Basil...</p>
                 </div>
+                </Link>
+
                 </div>
 
               </div>

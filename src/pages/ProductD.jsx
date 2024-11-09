@@ -129,7 +129,7 @@ export const ProductD = () => {
 
         <div className='d-flex justify-between'>
           <div> <span className='text-xl font-fontRegular'>Recent Posts</span></div>
-          <div> <span className='text-xl font-fontRegular'>See All</span></div>
+          <div> <Link  to={'/blogs'} > <span className='text-xl font-fontRegular'>See All</span></Link> </div>
         </div>
         <div className="row pt-5">
 
