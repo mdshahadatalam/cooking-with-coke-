@@ -11,7 +11,7 @@ export const Rejistration = () => {
     <ToastContainer/>
    <div className='w-full h-screen flex items-center justify-center text-white back-img'>
     <div className='w-2/4 bg-slate-600 shadow-md rounded-md p-2 flex items-center gap-x-2 justify-between'>
-
+   
 
     <div className="row RegisRes">
     <div className='w-[48%] col-lg-6 Registra '>

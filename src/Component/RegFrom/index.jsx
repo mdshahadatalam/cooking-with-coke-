@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 import { signUp } from '../../Validation/Validation'
 import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
 import { SyncLoader } from 'react-spinners';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const RegFrom = ({toast}) => {
   const [loading,setLoading] = useState(false)
+  const navigate = useNavigate()
   const auth = getAuth();
     const initialValues ={
       fullName:" ",
@@ -24,7 +26,7 @@ export const RegFrom = ({toast}) => {
     const createNewUser =()=>{
       setLoading(true)
       createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password)
-  .then((userCredential) => {
+  .then(() => {
     sendEmailVerification(auth.currentUser)
     .then(()=>{
       toast.success('Email sent for verification', {
@@ -37,6 +39,9 @@ export const RegFrom = ({toast}) => {
         progress: undefined,
         theme: "light",
         });
+        setTimeout(()=>{
+          navigate ('/SignIn')
+        },2500)
         setLoading(false)
     })
     .catch((error)=>{
@@ -66,9 +71,7 @@ export const RegFrom = ({toast}) => {
         });
         setLoading(false)
     }
-    // console.log(error.message);
-    
-    // // ..
+
   });
     }
 
@@ -111,14 +114,14 @@ export const RegFrom = ({toast}) => {
           )
          }
 
-        <button  disabled={loading} type='button' className='bg-slate-900 text-white text-base font-fontBold rounded-md w-full py-2'>  
+        <button  disabled={loading} type='submit' className='bg-slate-900 text-white text-base font-fontBold rounded-md w-full py-2'>  
           {
             loading ? <SyncLoader color='#fff' size={5}/> : "sign up"
           }
           </button>
 
         </form>
-        <p className='text-gray-200 text-base font-fontRegular pt-2'>Al ready have a account? sign in </p>
+        <p className='text-gray-200 text-base font-fontRegular pt-2'>Al ready have a account? <Link className='text-blue-500 hover:underline' to={'/SignIn'}> sign in</Link> </p>
     </div>
     </>
   )

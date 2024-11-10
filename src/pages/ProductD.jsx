@@ -22,9 +22,13 @@ export const ProductD = () => {
     <section className='pt-14'>
         <div className="container">
        
+
         <div className='  d-none navLog'>
+           <Link to={'/SignIn'}> 
             <h4 className='text-md font-fontRegular  cursor-pointer text-center'>Log in / Sign up</h4>
-          </div>
+             
+            </Link>
+         </div>
 
         <div className='pt-4 d-flex justify-between'>
 
@@ -35,10 +39,12 @@ export const ProductD = () => {
           <a className='font-fontRegular text-xl py-2 px-3' href="">Archives</a>
           </div>
 
-          <div className='w-[12%] logRes'>
-            <h4 className='text-lg font-fontRegular border border-black p-2 cursor-pointer log'>Log in / Sign up</h4>
-          </div>
 
+          <div className='w-[12%] logRes'>
+          <Link to={'/SignIn'}> 
+            <h4 className='text-lg font-fontRegular border border-black p-2 cursor-pointer log'>Log in / Sign up</h4>
+          </Link>
+          </div>
           </div>
             <div className="row border  border-black-200 mt-6">
 

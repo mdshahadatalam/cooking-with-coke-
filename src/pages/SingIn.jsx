@@ -20,6 +20,7 @@ export const SingIn = () => {
     <div className='w-[48%] col-lg-6 Registra  '>
         <SingInForm toast={toast} />
     </div>
+    <p className='text-center font-fontRegular'>Back to Home</p>
    </div>
 
     </div>

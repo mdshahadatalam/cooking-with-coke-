@@ -8,7 +8,6 @@ export const signUp = Yup.object({
 
 
 export const SignIn = Yup.object({
-    fullName:Yup.string().min(3).max(10).required("Please enter your Full name"),
     email:Yup.string().email().required("Enter your Email"),
     password: Yup.string().min(8).required("Enter your password"),
 })

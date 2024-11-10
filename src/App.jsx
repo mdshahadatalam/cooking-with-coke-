@@ -14,6 +14,8 @@ import { Cheaper } from './pages/Cheaper';
 import { Kid } from './pages/Kid';
 import Archive from './pages/Archive';
 import { ProductD } from './pages/ProductD';
+import LoggedInUserRoute from './PrivateRoute/LoggedInUserRoute';
+import NotLoggedInUserRoute from './PrivateRoute/NotLoggedInUserRoute';
 
 
 
@@ -40,6 +42,15 @@ function App() {
 
          <Route path='/rejistration' element={<Rejistration/>} />
         <Route path='/SignIn' element={<SingIn/>} />
+
+
+        <Route element={<LoggedInUserRoute/>}>
+           {/* privateRoute  */}
+        </Route>
+
+        <Route element={ <NotLoggedInUserRoute/> }>
+
+        </Route>
         
       </Route>
     )
