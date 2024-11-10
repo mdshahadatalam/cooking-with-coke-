@@ -3,6 +3,7 @@ import React from 'react'
 import { SingInForm } from '../Component/RegFrom/SingIn'
 import { toast, ToastContainer } from 'react-toastify'
 import regAni from '../Animation/regAni.json'
+import { Link } from 'react-router-dom'
 
 export const SingIn = () => {
   return (
@@ -20,7 +21,9 @@ export const SingIn = () => {
     <div className='w-[48%] col-lg-6 Registra  '>
         <SingInForm toast={toast} />
     </div>
-    <p className='text-center font-fontRegular'>Back to Home</p>
+    <p className=' hover:underline text-center font-fontRegular text-xl font-bold tracking-wider back'>
+      <Link to={'/'}> Back to Home </Link>
+     </p>
    </div>
 
     </div>

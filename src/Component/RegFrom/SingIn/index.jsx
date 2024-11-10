@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { SyncLoader } from 'react-spinners';
 import { SignIn } from '../../../Validation/Validation';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { LoggedInUser } from '../../../fueature/slice/LoginSlice';
 
@@ -13,6 +13,7 @@ export const SingInForm = ({toast}) => {
   const [loading,setLoading] = useState(false)
   const dispatch = useDispatch()
   const auth = getAuth();
+  const navigate = useNavigate()
 
     const initialValues ={
       email:" ",
@@ -35,6 +36,8 @@ export const SingInForm = ({toast}) => {
    if(user.user.emailVerified === true){
     dispatch(LoggedInUser(user))
     localStorage.setItem("user",JSON.stringify(user))
+
+    navigate('/')
     
    } else{
     toast.error('Please verified  your email!', {

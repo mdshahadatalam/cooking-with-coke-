@@ -28,17 +28,19 @@ function App() {
 
     createRoutesFromElements(
       <Route>
-
+        
         <Route element={<RootLayout/>} >
 
-         <Route path='/' element={< Home/>} />
-         <Route path='/blogs' element={< Blogs/>} />
-         <Route path='/about' element={< About/>} />
-         <Route path='/cheaper' element={< Cheaper/>} />
-         <Route path='/kid' element={< Kid/>} />
-         <Route path='/archive' element={< Archive/>} />
-         <Route path='/productD' element={< ProductD/>} />
-         </Route>
+           <Route path='/' element={< Home/>} />
+           <Route path='/blogs' element={< Blogs/>} />
+           <Route path='/about' element={< About/>} />
+           <Route path='/cheaper' element={< Cheaper/>} />
+           <Route path='/kid' element={< Kid/>} />
+           <Route path='/archive' element={< Archive/>} />
+           <Route path='/productD' element={< ProductD/>} />
+
+        </Route>
+        
 
          <Route path='/rejistration' element={<Rejistration/>} />
         <Route path='/SignIn' element={<SingIn/>} />
@@ -46,6 +48,7 @@ function App() {
 
         <Route element={<LoggedInUserRoute/>}>
            {/* privateRoute  */}
+          
         </Route>
 
         <Route element={ <NotLoggedInUserRoute/> }>

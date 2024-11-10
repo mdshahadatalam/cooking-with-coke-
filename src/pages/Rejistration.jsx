@@ -4,6 +4,7 @@ import side from '../assets/images/side.jpg'
 import Lottie from "lottie-react";
 import regAni from '../Animation/regAni.json'
 import { ToastContainer, toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 export const Rejistration = () => {
   return (
@@ -21,6 +22,10 @@ export const Rejistration = () => {
     <div className='w-[48%] col-lg-6 Registra '>
         <RegFrom toast={toast} />
     </div>
+
+    <p className=' hover:underline text-center font-fontRegular text-xl font-bold tracking-wider back'>
+      <Link to={'/'}> Back to Home </Link>
+     </p>
     </div>
 
     </div>
