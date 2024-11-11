@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom'
 // aos animation 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import LoggedInUserRoute from '../PrivateRoute/LoggedInUserRoute'
+// import LoggedInUserRoute from '../PrivateRoute/LoggedInUserRoute'
 
 export const Home = () => {
 
@@ -149,7 +149,7 @@ export const Home = () => {
         </div>
     </section>
 
-    <LoggedInUserRoute/>
+    {/* <LoggedInUserRoute/> */}
     </>
   )
 }
