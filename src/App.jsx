@@ -16,6 +16,7 @@ import Archive from './pages/Archive';
 import { ProductD } from './pages/ProductD';
 import LoggedInUserRoute from './PrivateRoute/LoggedInUserRoute';
 import NotLoggedInUserRoute from './PrivateRoute/NotLoggedInUserRoute';
+import { ProductD2 } from './pages/ProductD2';
 
 
 
@@ -38,6 +39,7 @@ function App() {
            <Route path='/kid' element={< Kid/>} />
            <Route path='/archive' element={< Archive/>} />
            <Route path='/productD' element={< ProductD/>} />
+           <Route path='/productD2' element={< ProductD2/>} />
 
         </Route>
         

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import proImg1 from '../assets/images/productDimg/proImg1.webp'
-import proImg2 from '../assets/images/productDimg/proImg2.webp'
-import proImg3 from '../assets/images/productDimg/proImg3.webp'
-import proImg4 from '../assets/images/productDimg/proImg4.webp'
-import porImg5 from '../assets/images/productDimg/proImg5.webp'
+import BifImg1 from '../assets/images/Product2/BifImg.webp'
+import BifImg2 from '../assets/images/Product2/BifImg2.webp'
+import BifImg3 from '../assets/images/Product2/BifImg3.webp'
+import BifImg4 from '../assets/images/Product2/BifImg4.webp'
+import BifImg5 from '../assets/images/Product2/BifImg5.webp'
+import BifImg6 from '../assets/images/Product2/BifImg6.webp'
+// import BifImg7 from '../assets/images/Product2/BifImg7.webp'
+
 
 import card1 from '../assets/images/productDimg/card1.webp'
 import card2 from '../assets/images/productDimg/card2.webp'
@@ -17,10 +20,11 @@ import { CgLink } from "react-icons/cg";
 
 import { IoEyeOutline } from "react-icons/io5";
 
-export const ProductD = () => {
+export const ProductD2 = () => {
   return (
     <>
-    <section className='pt-14'>
+
+<section className='pt-14'>
         <div className="container">
        
 
@@ -56,34 +60,54 @@ export const ProductD = () => {
 
                 <div className='py-5'>
                 <span className='text-xl font-fontRegular '>1 min read</span>
-                <h4 className='text-4xl font-extrabold font-fontRegular py-4'>Simple Arrabbiata Sauce</h4>
+                <h4 className='text-4xl font-extrabold font-fontRegular py-4'>Steak Frites with Red Wine Pan Sauce</h4>
                 <span className='text-xl font-fontRegular'>Updated: Jun 13</span>
                 </div>
 
-                <img className='img-fluid' src={proImg1} alt="" />
+                <img className='img-fluid' src={BifImg1} alt="" />
 
 
                 <div className='py-8'>
+                <h3 className='text-4xl font-fontRegular font-extrabold tracking-wide'>
+                Servings: 2</h3>
                   <h3 className='text-4xl font-fontRegular font-extrabold tracking-wide'>Ingredients:</h3>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >1 28.2 oz can whole peeled tomatoes</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >4 cloves garlic</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >1/4 cup olive oil</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Chopped Calabrian chiles</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Handful chopped parsley</li>
+                  <h3 className='text-xl font-fontRegular tracking-wider py-1'>French Fries</h3>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >3 Russet potatoes</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >Ice water</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >Vegetable (or any neutral) oil</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >Dried parsley (to garnish)</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >Salt</li>
                   <li className='text-xl font-fontRegular tracking-wider py-1' >Basil to garnish</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Salt and pepper to taste</li>
-                </div>
+                  <li className='text-xl font-fontRegular tracking-wider py-1' >Freshly grated parmesan cheese</li>
 
-                <div>
-                <h3 className='text-4xl font-fontRegular font-extrabold tracking-wide'>Instructions:</h3>
 
-                <span className='text-xl font-fontRegular tracking-wider py-1' > 1. Heat olive oil in a large saucepan over medium heat</span> <br />
-                <span className='text-xl font-fontRegular tracking-wider py-1' > 2. Add the garlic and chiles, and cook until the garlic is browned and it starts to smell strongly
-                </span>
+                  <h3 className='text-xl font-fontRegular tracking-wider py-1'>Steak</h3>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>2 New York strip steaks</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 sprig rosemary</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>5 cloves garlic</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>6 tablespoons butter</li>
+
+                  <h3 className='text-xl font-fontRegular tracking-wide'>Red Wine Pan Sauce</h3>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'> small shallot</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 cup red wine </li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 cup beef stock</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1'>Salt to taste</li>
+
+
+                  <h3 className='text-xl font-fontRegular tracking-wider font-extrabold py-1'>nstructions:</h3>
+                  <h3 className='text-xl font-fontRegular tracking-wider font-extrabold py-1'>Note:</h3>
+
+                  <p className='text-xl font-fontRegular tracking-wider py-1'>As far as the order, I would recommend starting by placing the steaks in the oven (step 1 on the steak section) and then making the French fries. Once you are done with the French fries, the steaks will likely be ready to sear. This way you aren't waiting around a long time in between steps.</p>
+
+                  <h3 className='text-xl font-fontRegular tracking-wide py-4'>French Fries:</h3>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>1. Start by peeling your potatoes using a knife or vegetable peeler. Then, cut the potatoes lengthwise into flat pieces and each lengthwise flat piece into fry-shaped pieces. </span> <br/>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>2. Place the potatoes in a bowl of ice-cold water for about 5 minutes or up to a couple of hours. Remove them, and dry them with a paper towel.</span>
                 </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={proImg2} alt="" />
+               <img className='py-10' src={BifImg2} alt="" />
                </div>
 
                <div>
@@ -91,7 +115,7 @@ export const ProductD = () => {
                </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={proImg3} alt="" />
+               <img className='py-10' src={BifImg3} alt="" />
                </div>
 
                <div>
@@ -99,7 +123,7 @@ export const ProductD = () => {
                </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={proImg4} alt="" />
+               <img className='py-10' src={BifImg4} alt="" />
                </div>
 
                <div>
@@ -108,7 +132,11 @@ export const ProductD = () => {
                </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={porImg5} alt="" />
+               <img className='py-10' src={BifImg5} alt="" />
+               </div>
+               
+               <div className='d-flex justify-center'>
+                <img src={BifImg6} alt="" />
                </div>
 
 
@@ -208,8 +236,6 @@ export const ProductD = () => {
         </div>
       </div>
     </section>
-
-
 
     </>
   )
