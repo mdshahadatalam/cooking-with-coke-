@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 DataBase
+FireBaseConfig.jsx
 
 # Editor directories and files
 .vscode/*
