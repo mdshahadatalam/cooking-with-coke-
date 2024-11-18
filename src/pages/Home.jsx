@@ -60,10 +60,13 @@ export const Home = () => {
                 <div className='pt-3 ps-2'>
                 <span className='text-lg font-fontRegular pt-3 d-block'>Jun 2 . 2 min read</span>
 
+                <Link to={'productD2'}>
                 <div className='hover:text-red-500'>
                 <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Steak Frites with Red Wine Pan Sauce</h4>
                 <p className='font-fontRegular text-xl pt-3'>Servings: 2 Ingredients: French Fries 3 Russet potatoes Ice <br/> water Vegetable (or any neutral) oil Dried parsley (to <br/> garnish) Salt Freshly...</p>
                 </div>
+                </Link>
+
                 </div>
 
               </div>
@@ -83,10 +86,12 @@ export const Home = () => {
                <span className='text-lg font-fontRegular pt-3 d-block'>Dec 30, 2023 . 
                 1 min read</span>
 
+                <Link to={'/productD3'}>
                 <div className='hover:text-red-500'>
                 <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Spicy Chicken Tacos</h4>
                 <p className='font-fontRegular text-xl pt-3'>Ingredients (15 tacos): Chicken Fajitas: 3 lbs boneless <br/> skinless chicken breast, cut into small pieces 2 sweet red <br/> bell peppers, sliced...  </p>
                 </div>
+                </Link>
                </div>
 
               </div>
