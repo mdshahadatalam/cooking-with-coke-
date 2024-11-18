@@ -3,14 +3,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+import LastPro1 from '../assets/images/Product5/Pro5.webp'
+import LastPro2 from '../assets/images/Product5/Pro5.1.webp'
+import LastPro3 from '../assets/images/Product5/Pro5.2.webp'
+import LastPro4 from '../assets/images/Product5/Pro5.3.webp'
+// import LastPro5 from '../assets/images/Product5/Pro5.4.webp'
 
-
-import D4 from '../assets/images/product4/Pro4.webp'
-import D5 from '../assets/images/product4/Pro4.1.webp'
-import D6 from '../assets/images/product4/Pro4.2.webp'
-import D7 from '../assets/images/product4/Pro4.3.webp'
-import D8 from '../assets/images/product4/Pro4.4.webp'
-// import D9 from '../assets/images/product4/Pro4.5.webp'
 
 
 
@@ -25,7 +23,7 @@ import { CgLink } from "react-icons/cg";
 
 import { IoEyeOutline } from "react-icons/io5";
 
-export const ProductD4 = () => {
+export const Product5 = () => {
   return (
     <>
 
@@ -67,79 +65,70 @@ export const ProductD4 = () => {
 
                 <div className='py-5'>
                 <span className='text-xl font-fontRegular '>1 min read</span>
-                <h4 className='text-4xl font-extrabold font-fontRegular py-4'>One-Pot Chicken and Rice</h4>
-
-                <p className='font-fontRegular text-2xl text-justify tracking-normal'>I recently found this recipe, and altered it to my liking! Its a great post-workout meal, or an easy week night dinner. It is really easy to make, and also really flavorful!</p> 
+                <h4 className='text-4xl font-extrabold font-fontRegular py-4'>Fresh Summer Salad</h4>
                 </div>
 
-                <img className='img-fluid' src={D4} alt="" />
+                <img className='img-fluid' src={LastPro1} alt="" />
 
 
                 <div className='py-8'>
                 <h3 className='text-2xl font-fontRegular font-extrabold tracking-wide'>
                 Ingredients:</h3>
+
+                <h3  className='text-xl font-fontRegular font-extrabold tracking-wide pt-4' > Salad:</h3>
         
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >2 lbs bone-in chicken thighs</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >7 cloves minced garlic</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >2 tablespoons grated ginger</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >2 tablespoons garam masala</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >1 teaspoon salt</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >1/2 teaspoon turmeric</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >2 teaspoons red chili pepper</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none' >- 5 oz fresh baby arugula, washed</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none ' >- 5 oz fresh baby spinach, washed</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none ' >- 3 ripe white peaches</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none ' >- 3 ripe yellow peaches</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none ' >-  12 ripe figs, quartered</li>
+                  <li className='text-xl font-fontRegular tracking-wider py- list-none ' >- 5 oz creamy goat cheese</li>
+                  <li className='text-xl font-fontRegular tracking-wider py- list-none ' >- 3/4 cup pine nuts</li>
 
 
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 lemon, juiced</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>1/4 Cup avocado oil, or any other neutral oil with a high smoke point</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>1/4 - 1/2 Cup sun dried tomatoes, roughly chopped</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>3 tablespoons tomato paste</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 teaspoon chili flakes</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- 1 1/3 cup basil leaves</li>
 
-                  <li className='text-xl font-fontRegular tracking-wider py-1'>1 shallot, minced</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1'> 2-3 Cups Basmati Rice</li>
+                  <h3 className='text-2xl font-fontRegular font-extrabold tracking-wide pt-3'>
+                  Dressing:</h3>
 
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >One box chicken broth</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Asiago Cheese</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Cream</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Cilantro</li>
-                  <li className='text-xl font-fontRegular tracking-wider py-1' >Basil</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>-1/2 cup olive oil</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- 6 tablespoons balsamic reduction</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- Half of a lemon, juiced</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- 1 clove garlic, minced</li>
+
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- 1 1/2 tablespoons maple syru</li>
+                  <li className='text-xl font-fontRegular tracking-wider py-1 list-none '>- Pinch of salt</li>
           
                   <h3 className='text-2xl font-fontRegular font-extrabold tracking-wide py-2'>
                   Instructions:</h3>               
                
                   <span className='text-xl font-fontRegular py-2 d-inline-block'> 1.
-                  Mix the ginger, garam masala, salt, turmeric, half of the minced garlic, chili pepper, and lemon juice in a large bowl. Toss the chicken in the spice mixture until the chicken is evenly coated.</span> <br/>
+                  Toast the pine nuts for about 2 minutes in a small pan until lightly browned. Remove from heat and set aside in a small bowl.</span> <br/>
 
-                  <span className='text-xl font-fontRegular py-2 d-inline-block'>2. Heat oil in a cast-iron skillet over medium high heat. Once the oil begins to shimmer, sear the chicken until golden brown on both sides, about 3 minutes per side. Set aside.   </span>
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>2. Cut the peaches and figs, and place in separate Tupperware containers. Set aside.</span> <br/>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>3. For the basil leaves, I like to julienne them. To do this, you can grab a few leaves, and stack them on top of each other. Then, roll the stack of basil leaves into a cylindrical shape. From here, you can cut the cross section of the cylindrical shape to form neat strips of basil leaves. Set aside in a small bowl.</span><br/>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>4. Whisk the olive oil, balsamic reduction, juice of half a lemon, minced garlic, maple syrup, and salt together until well combined. Set aside.</span> <br/>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>5. Place the arugula and spinach in a large salad bowl, and top with the toasted pine nuts. Place spoonfuls of goat cheese on top of this. <span className='font-bold'>If you are making this for a party, skip to Step 7 and ignore Step 6.</span> </span> <br/>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>6. Layer the peaches, figs, and basil leaves on top of the spinach and arugula. Dress to your liking, and toss to coat. Serve as soon as possible.</span>
+
+                  <span className='text-xl font-fontRegular py-2 d-inline-block'>7. If you plan on making this for a party, I would recommend not adding the fruits or dressing until you are about to eat. I would place a damp rag over the top of the salad bowl, and bring it along with Tupperware containers of the fruit and dressing to the party. Once you are about to eat, you can then refer to Step 6.</span>
                 </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={D5} alt="" />
-               </div>
-
-               <div>
-                <span  className='text-xl font-fontRegular tracking-wider py-1'>3. Add the tomato paste and sun dried tomatoes to the skillet. Cook for about 1 minute over medium heat until they begin to smell strongly. Then, add the rest of the minced garlic, the minced shallot, chili flakes, and the rice. Mix this together and toast it for another 1-2 minutes over medium heat.</span> <br/>
-
+               <img className='py-10' src={LastPro2} alt="" />
                </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={D6} alt="" />
+               <img className='py-10' src={LastPro3} alt="" />
                </div>
 
-               <div>
-                <span className='text-xl font-fontRegular tracking-wider py-1'>4. Then, add enough the chicken back into the pot, and cover with chicken broth until the rice and chicken are submerged. Cover, and wait until rice is cooked. </span> <br/>
-
-               </div>
 
                <div className='d-flex justify-center'>
-               <img className='py-10' src={D7} alt="" />
-               </div>
-
-               <div>
-                <span className='text-xl font-fontRegular tracking-wider py-1'>5. Coat with a bit of grated asiago cheese, a drizzle of cream, and a sprinkle of chopped cilantro and basil. Enjoy!</span>
-               </div>
-
-               <div className='d-flex justify-center'>
-               <img className='py-10' src={D8} alt="" />
+               <img className='py-10' src={LastPro4} alt="" />
                </div>
 
 

@@ -133,10 +133,12 @@ export const Home = () => {
                 <span className='text-lg font-fontRegular pt-3 d-block'>Jul 10, 2023 . 
                 2 min read</span>
 
+                <Link to={'/productD5'}>
                 <div className='hover:text-red-500'>
                 <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Fresh Summer Salad</h4>
                 <p className='font-fontRegular text-xl pt-3'>I was recently asked to bring a salad to a party, and I didn't <br/> know what to do. I wanted a seasonal summer salad, but I <br /> couldn't find a... </p>
                 </div>
+                </Link>
                 </div>
 
               </div>

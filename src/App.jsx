@@ -19,6 +19,7 @@ import NotLoggedInUserRoute from './PrivateRoute/NotLoggedInUserRoute';
 import { ProductD2 } from './pages/ProductD2';
 import { ProductD3 } from './pages/ProductD3';
 import { ProductD4 } from './pages/ProductD4';
+import { Product5 } from './pages/Product5';
 
 
 
@@ -44,6 +45,7 @@ function App() {
            <Route path='/productD2' element={< ProductD2/>} />
            <Route path='/productD3' element={< ProductD3/>} />
            <Route path='/productD4' element={< ProductD4/>} />
+           <Route path='/productD5' element={< Product5/>} />
 
         </Route>
         
