@@ -109,10 +109,12 @@ export const Home = () => {
                 <span className='text-lg font-fontRegular pt-3 d-block'>Oct 28, 2023 . 
                 1 min read</span>
 
+                <Link to={'/productD4'}>
                 <div className='hover:text-red-500'>
                 <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>One-Pot Chicken and Rice</h4>
                 <p className='font-fontRegular text-xl pt-3'>I recently found this recipe, and altered it to my liking! Its a <br /> great post-workout meal, or an easy week night dinner. It is <br /> really easy.. </p>
                 </div>
+                </Link>
                 </div>
                 
               </div>
