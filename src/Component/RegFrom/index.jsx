@@ -10,15 +10,16 @@ export const RegFrom = ({toast}) => {
   const navigate = useNavigate()
   const auth = getAuth();
     const initialValues ={
-      fullName:" ",
-      email:" ",
+      fullName:"",
+      email:"",
       password: "",
     }
 
     const formik = useFormik({
         initialValues,
-        onSubmit: ()=>{
+        onSubmit: (values,{resetForm})=>{
         createNewUser()
+        resetForm({values:''})
         },
         validationSchema:signUp,
     })
@@ -85,7 +86,7 @@ export const RegFrom = ({toast}) => {
          name='fullName'
          value={formik.values.fullName}
          onChange={formik.handleChange} 
-         type="text" placeholder='Enter your name'
+         type="text" placeholder='Enter your Full name'
          className='w-full px-3 py-2 border border-slate-400 outline-none mb-3 rounded-md'/>
          {
           formik.errors.fullName&&formik.touched.fullName&&( <p className='font-fontRegular text-red-500 text-sm mb-5'>{formik.errors.fullName} </p>

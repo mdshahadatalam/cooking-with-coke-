@@ -22,8 +22,9 @@ export const SingInForm = ({toast}) => {
 
     const formik = useFormik({
       initialValues,
-      onSubmit: ()=>{
+      onSubmit: (values,{resetForm})=>{
       SignInNewUser()
+      resetForm({values:''})
       },
       validationSchema:SignIn
   })

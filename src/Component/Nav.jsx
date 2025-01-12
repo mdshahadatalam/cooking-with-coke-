@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { getAuth, signOut } from "firebase/auth";
 import './Nav.css'
+import { LoggedInUser } from '../fueature/slice/LoginSlice';
+import { useDispatch } from 'react-redux';
+import { PulseLoader } from 'react-spinners';
 // import Nav from 'react-bootstrap/Nav';
 
 export const Nav = () => {
-  const loaction = useLocation()
+  const location = useLocation()
+  const auth = getAuth();
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const [loader,setLoader] = useState(false)
+
+  const handleLogOut =()=>{
+    signOut(auth).then(() => {
+      setLoader(true)
+      setTimeout(()=>{
+        navigate('/')
+        dispatch(LoggedInUser())
+       localStorage.removeItem('user')
+    },2500)
+
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
   return (
     <>
 
@@ -47,11 +69,14 @@ export const Nav = () => {
         </li>
       </NavLink>
     </ul>
-    {/* <a className="nav-link text-center  text-4xl font-fontRegular font-extrabold cooking " href="#">Cooking with Cole</a> */}
-          
-
-     
+ 
     </div>
+    <button onClick={handleLogOut} className='w-24 h-10 bg-white shadow-md rounded-md text-slate-500 font-fontRegular font-semibold tracking-wide hover:shadow-lg'>
+      {
+        loader?<PulseLoader size={5} color='black' /> : "Log Out"
+      }
+      
+      </button>
   </div>
 </nav>
 
@@ -93,7 +118,6 @@ export const Nav = () => {
       </NavLink>
  
 </ul>
-
 <ul className='m-0 d-flex'>
 </ul>
     </div>

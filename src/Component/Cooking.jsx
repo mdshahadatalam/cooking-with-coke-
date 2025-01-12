@@ -6,7 +6,7 @@ import { FiSearch } from "react-icons/fi";
 export const Cooking = () => {
   return (
     <>
-     <div className="container">
+     <div className="container CookingWith">
      <div className='position-relative'>
      <Link to={'/'}> <a className="nav-link text-center  text-4xl font-fontRegular font-extrabold cooking " href="#">Cooking with Cole</a></Link>
      </div>
