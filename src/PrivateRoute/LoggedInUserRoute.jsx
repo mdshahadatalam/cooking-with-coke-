@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
-import { SignIn } from "../Validation/Validation";
-export default function LoggedInUserRoute(){
+import { SingIn } from "../pages/SingIn";
+
+export default function(){
     const user = useSelector((user)=> user.login.LoggedIn)
-    return user ? <Outlet/> : <SignIn/>
+    return user ? <Outlet/> : <SingIn/>
 }
