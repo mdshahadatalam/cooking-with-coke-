@@ -22,10 +22,6 @@ export const Rejistration = () => {
     <div className='w-[48%] col-lg-6 Registra '>
         <RegFrom toast={toast} />
     </div>
-
-    <p className=' hover:underline text-center font-fontRegular text-xl font-bold tracking-wider back'>
-      <Link to={'/'}> Back to Home </Link>
-     </p>
     </div>
 
     </div>

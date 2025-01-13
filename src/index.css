@@ -20,7 +20,7 @@
   src: url(/public/fonts/Roboto-Bold.ttf);
 }
 .back-img{
-  background-image: url(./assets/images/img.jpg);
+  background-image: url(./assets/images/image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
