@@ -20,6 +20,7 @@ import { ProductD2 } from './pages/ProductD2';
 import { ProductD3 } from './pages/ProductD3';
 import { ProductD4 } from './pages/ProductD4';
 import { Product5 } from './pages/Product5';
+import { Forget } from './Component/Forget';
 
 
 
@@ -58,6 +59,7 @@ function App() {
         <Route element={ <NotLoggedInUserRoute/> }>
            <Route path='/rejistration' element={<Rejistration/>} />
            <Route path='/SignIn' element={<SingIn/>} />
+           <Route path='/forget' element={<Forget />} />
         </Route>
 
         

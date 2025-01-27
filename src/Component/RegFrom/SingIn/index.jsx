@@ -109,6 +109,8 @@ export const SingInForm = ({toast}) => {
 
         </form>
         <p className='text-gray-200 text-base font-fontRegular pt-2'>Don't have a account? <Link className='text-blue-500 hover:underline' to={'/rejistration'}> sign up</Link> </p>
+
+        <Link to={'/forget'} className='hover:underline hover:text-blue-500'><p className='text-gray-200 text-base font-fontRegular pt-2'>Forget password?</p></Link>
     </div>
     </>
   )
