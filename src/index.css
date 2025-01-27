@@ -128,3 +128,15 @@
  }
 
 
+ @media (max-width: 991.98px) { 
+   .lottie{
+    display: none;
+   }
+
+   .inputRes{
+    width: 70%;
+    text-align: center;
+   }
+ }
+
+

@@ -33,12 +33,12 @@ export const SingIn = () => {
        <div   className='w-full position-relative h-screen flex items-center justify-center text-white back-img'>
 
      
-      <div className='w-2/4 position-relative bg-slate-600 shadow-md rounded-md p-2 flex items-center gap-x-2 justify-between'>
+      <div className=' inputRes w-2/4 position-relative bg-slate-600 shadow-md rounded-md p-2 flex items-center gap-x-2 justify-between'>
 
 
     <div className="row RegisRes">
     <div className='w-[48%] col-lg-6  Registra '>
-       <Lottie animationData={regAni} loop={true} />
+       <Lottie className='lottie' animationData={regAni} loop={true} />
        </div>
      <div className='w-[48%] col-lg-6 Registra  '>
          <SingInForm toast={toast} />
