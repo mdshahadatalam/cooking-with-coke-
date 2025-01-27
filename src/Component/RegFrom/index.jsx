@@ -4,6 +4,7 @@ import { signUp } from '../../Validation/Validation'
 import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
 import { SyncLoader } from 'react-spinners';
 import { Link, useNavigate } from 'react-router-dom';
+import { Google } from '../Google';
 
 export const RegFrom = ({toast}) => {
   const [loading,setLoading] = useState(false)
@@ -123,6 +124,8 @@ export const RegFrom = ({toast}) => {
 
         </form>
         <p className='text-gray-200 text-base font-fontRegular pt-2'>Al ready have a account? <Link className='text-blue-500 hover:underline' to={'/SignIn'}> sign in</Link> </p>
+
+        <Google/>
     </div>
     </>
   )
