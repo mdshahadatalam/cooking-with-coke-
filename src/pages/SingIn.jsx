@@ -25,36 +25,42 @@ export const SingIn = () => {
       Aos.init();
     })
 
+    const handleAlert =()=>{
+      alert('Please sign up')
+    }
+
   
   return (
     <>
 
 <ToastContainer/>
+       <a href="#SignInLoad">
        <div   className='w-full position-relative h-screen flex items-center justify-center text-white back-img'>
 
      
-      <div className=' inputRes w-2/4 position-relative bg-slate-600 shadow-md rounded-md p-2 flex items-center gap-x-2 justify-between'>
+<div className=' inputRes w-2/4 position-relative bg-slate-600 shadow-md rounded-md p-2 flex items-center gap-x-2 justify-between'>
 
 
-    <div className="row RegisRes">
-    <div className='w-[48%] col-lg-6  Registra '>
-       <Lottie className='lottie' animationData={regAni} loop={true} />
-       </div>
-     <div className='w-[48%] col-lg-6 Registra  '>
-         <SingInForm toast={toast} />
-     </div>
- 
-    </div>
- 
-     </div> 
-  
-   
-    
+<div className="row RegisRes">
+<div className='w-[48%] col-lg-6  Registra '>
+ <Lottie className='lottie' animationData={regAni} loop={true} />
+ </div>
+<div className='w-[48%] col-lg-6 Registra  '>
+   <SingInForm toast={toast} />
+</div>
 
-   </div>
+</div>
+
+</div> 
 
 
-   <section id='SignInLoad' className='py-10'>
+
+
+</div>
+       </a>
+
+
+   <section  className='py-10'>
          <div className="container">
    
          <h3 className='text-center text-3xl font-bold food'>FOOD BLOG</h3>
@@ -70,7 +76,7 @@ export const SingIn = () => {
                    <div className='pt-3 ps-2'>
                    <span className='text-lg font-fontRegular pt-3 d-block'>Jun 6 . 1 min read</span>
    
-                   <Link to={'/productD'} > 
+                   <Link to={'/productD'} onClick={handleAlert} > 
                    <div className='hover:text-red-500'>
                    <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Simple Arrabbiata Sauce</h4>
                    <p className='font-fontRegular text-xl pt-3'>Ingredients: 1 28.2 oz can whole peeled tomatoes 4 cloves <br/> garlic 1/4 cup olive oil Chopped Calabrian chiles Handful <br/>  chopped parsley Basil...</p>
@@ -93,7 +99,7 @@ export const SingIn = () => {
                    <div className='pt-3 ps-2'>
                    <span className='text-lg font-fontRegular pt-3 d-block'>Jun 2 . 2 min read</span>
    
-                   <Link to={'productD2'}>
+                   <Link to={'productD2'} onClick={handleAlert}>
                    <div className='hover:text-red-500'>
                    <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Steak Frites with Red Wine Pan Sauce</h4>
                    <p className='font-fontRegular text-xl pt-3'>Servings: 2 Ingredients: French Fries 3 Russet potatoes Ice <br/> water Vegetable (or any neutral) oil Dried parsley (to <br/> garnish) Salt Freshly...</p>
@@ -119,7 +125,7 @@ export const SingIn = () => {
                   <span className='text-lg font-fontRegular pt-3 d-block'>Dec 30, 2023 . 
                    1 min read</span>
    
-                   <Link to={'/productD3'}>
+                   <Link to={'/productD3'} onClick={handleAlert}>
                    <div className='hover:text-red-500'>
                    <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Spicy Chicken Tacos</h4>
                    <p className='font-fontRegular text-xl pt-3'>Ingredients (15 tacos): Chicken Fajitas: 3 lbs boneless <br/> skinless chicken breast, cut into small pieces 2 sweet red <br/> bell peppers, sliced...  </p>
@@ -142,7 +148,7 @@ export const SingIn = () => {
                    <span className='text-lg font-fontRegular pt-3 d-block'>Oct 28, 2023 . 
                    1 min read</span>
    
-                   <Link to={'/productD4'}>
+                   <Link to={'/productD4'} onClick={handleAlert}>
                    <div className='hover:text-red-500'>
                    <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>One-Pot Chicken and Rice</h4>
                    <p className='font-fontRegular text-xl pt-3'>I recently found this recipe, and altered it to my liking! Its a <br /> great post-workout meal, or an easy week night dinner. It is <br /> really easy.. </p>
@@ -166,7 +172,7 @@ export const SingIn = () => {
                    <span className='text-lg font-fontRegular pt-3 d-block'>Jul 10, 2023 . 
                    2 min read</span>
    
-                   <Link to={'/productD5'}>
+                   <Link to={'/productD5'} onClick={handleAlert}>
                    <div className='hover:text-red-500'>
                    <h4 className='text-3xl font-fontRegular font-bold pt-4 text-justify'>Fresh Summer Salad</h4>
                    <p className='font-fontRegular text-xl pt-3'>I was recently asked to bring a salad to a party, and I didn't <br/> know what to do. I wanted a seasonal summer salad, but I <br /> couldn't find a... </p>
